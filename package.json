@@ -1,12 +1,14 @@
 {
   "name": "vue-tic-tac-toe-game",
-  "description": "Tic Tac Toe online game made using Vue 2",
+  "description": "Vue.js Tic Tac Toe Game",
   "version": "1.0.0",
   "author": "Jason Springer",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "dependencies": {
     "vue": "^2.1.0"
@@ -22,5 +24,9 @@
     "vue-template-compiler": "^2.1.0",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=6.11.3",
+    "npm": ">=5.3.0"
   }
 }
