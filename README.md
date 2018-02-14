@@ -1,4 +1,4 @@
-# Vue.js Tic Tac Toe Game
+# Vue.js Tic Tac Toe
 
 Tic Tac Toe Game built with Vue.js.
 
